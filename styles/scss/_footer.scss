@@ -1,0 +1,39 @@
+footer {
+    .logo {
+        a {
+            display: flex;
+            h2 {
+                font-family: $ff-accent;
+                font-weight: 700;
+                font-size: rem(43.25);
+                margin-left: rem(11.27);
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        
+        
+
+        
+
+        .nav-footer {
+            h4 {
+                font-weight: 700;
+            }
+
+            ul {
+                height: rem(172);
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+
+                li {
+                    color: $grey;
+                }
+            }
+        }
+    }
+}

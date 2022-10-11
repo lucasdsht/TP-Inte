@@ -1,0 +1,61 @@
+/*
+Structure HTML
+
+<header>
+    <div class="logo">
+        <a>
+            <h2><h2>
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li></li>
+        </li>
+    </nav>
+</header>
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 5% 0 5%;
+    position: relative;
+    
+    .logo {
+        a {
+            display: flex;
+            h2 {
+                font-family: $ff-accent;
+                font-weight: 700;
+                font-size: rem(43.25);
+                margin-left: rem(11.27);
+            }
+        }
+    }
+
+    .menu-mobile {
+        position: absolute;
+        right: 1rem;
+        font-size: rem(25);
+        
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media (min-width: $breakpoints-small) {
+            display: none;
+        }
+    }
+
+    nav {
+        ul {
+            display: none;
+
+            @media (min-width: $breakpoints-small) {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// import des polices depuis google font
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+// variables en scss -> $nom-de-la-variable: valeur-de-la-variable;
+
+// COULEURS
+$white: #fff;
+$black: #000;
+$dark-blue: #0A2640;
+$grey: #777777;
+$light-green: #65E4A3;
+
+// POLICES 
+$ff-body: 'Open Sans', sans-serif;
+$ff-accent: 'Manrope', sans-serif;
+
+// BREAKPOINTS
+
+// 650px, 1150px, 1400px
+$breakpoints-small: '40em';
+$breakpoints-medium: '71.875em';
+$breakpoints-large: '87.5em';
