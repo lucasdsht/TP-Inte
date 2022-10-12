@@ -50,12 +50,14 @@ header {
     }
 
     nav {
-        ul {
-            display: none;
+        display: none;
 
-            @media (min-width: $breakpoints-small) {
-                display: flex;
-            }
+        ul {
+            display: flex;
+        }
+
+        @media (min-width: $breakpoints-small) {
+            display: flex;
         }
     }
 }

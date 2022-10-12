@@ -101,11 +101,14 @@ header .menu-mobile:hover {
     display: none;
   }
 }
-header nav ul {
+header nav {
   display: none;
 }
+header nav ul {
+  display: flex;
+}
 @media (min-width: 40em) {
-  header nav ul {
+  header nav {
     display: flex;
   }
 }
@@ -139,3 +142,5 @@ footer nav .nav-footer ul {
 footer nav .nav-footer ul li {
   color: #777777;
 }
+
+/*# sourceMappingURL=styles.css.map */
