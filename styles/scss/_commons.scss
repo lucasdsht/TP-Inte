@@ -44,3 +44,13 @@
     color: $white;
   }
 }
+
+
+.badge {
+  background-color: $light-green;
+  color: $dark-blue;
+  font-weight: 700;
+  font-size: 13px;
+  padding: rem(7) rem(14);
+  border-radius: rem(120);
+}
