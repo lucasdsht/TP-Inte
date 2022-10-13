@@ -22,18 +22,6 @@ header {
     align-items: center;
     margin: 5% 5% 0 5%;
     position: relative;
-    
-    .logo {
-        a {
-            display: flex;
-            h2 {
-                font-family: $ff-accent;
-                font-weight: 700;
-                font-size: rem(43.25);
-                margin-left: rem(11.27);
-            }
-        }
-    }
 
     .menu-mobile {
         position: absolute;
@@ -44,7 +32,7 @@ header {
             cursor: pointer;
         }
 
-        @media (min-width: $breakpoints-small) {
+        @media (min-width: $breakpoints-medium) {
             display: none;
         }
     }
@@ -54,9 +42,16 @@ header {
 
         ul {
             display: flex;
+            gap: rem(40);
+
+            li {
+                font-size: rem(16);
+                color: $dark-blue;
+                font-weight: 600;
+            }
         }
 
-        @media (min-width: $breakpoints-small) {
+        @media (min-width: $breakpoints-medium) {
             display: flex;
         }
     }

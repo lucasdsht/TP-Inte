@@ -55,6 +55,49 @@ table {
   text-decoration: none;
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+}
+.logo a:hover {
+  cursor: pointer;
+}
+.logo a h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 2.703125rem;
+  margin-left: 0.704375rem;
+}
+
+.cta-filled {
+  background-color: #65E4A3;
+  color: #0A2640;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 3.5rem;
+  border: 0;
+}
+.cta-filled:hover {
+  cursor: pointer;
+}
+
+.cta-outline {
+  background-color: transparent;
+  color: #0A2640;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: solid 0.125rem #0A2640;
+  border-radius: 1.5rem;
+  transition: background-color 500ms, color 500ms;
+}
+.cta-outline:hover {
+  cursor: pointer;
+  background-color: #0A2640;
+  color: #fff;
+}
+
 /*
 Structure HTML
 
@@ -79,15 +122,6 @@ header {
   margin: 5% 5% 0 5%;
   position: relative;
 }
-header .logo a {
-  display: flex;
-}
-header .logo a h2 {
-  font-family: "Manrope", sans-serif;
-  font-weight: 700;
-  font-size: 2.703125rem;
-  margin-left: 0.704375rem;
-}
 header .menu-mobile {
   position: absolute;
   right: 1rem;
@@ -96,7 +130,7 @@ header .menu-mobile {
 header .menu-mobile:hover {
   cursor: pointer;
 }
-@media (min-width: 40em) {
+@media (min-width: 71.875em) {
   header .menu-mobile {
     display: none;
   }
@@ -106,8 +140,14 @@ header nav {
 }
 header nav ul {
   display: flex;
+  gap: 2.5rem;
 }
-@media (min-width: 40em) {
+header nav ul li {
+  font-size: 1rem;
+  color: #0A2640;
+  font-weight: 600;
+}
+@media (min-width: 71.875em) {
   header nav {
     display: flex;
   }
@@ -117,29 +157,21 @@ main .hero-banner .hero-banner-text-container .hero-banner-text-container .hero-
   font-weight: 700;
 }
 
-footer .logo a {
-  display: flex;
-}
-footer .logo a h2 {
-  font-family: "Manrope", sans-serif;
-  font-weight: 700;
-  font-size: 2.703125rem;
-  margin-left: 0.704375rem;
-}
 footer nav {
   display: flex;
   justify-content: space-around;
 }
-footer nav .nav-footer h4 {
+footer nav .footer-nav h5 {
   font-weight: 700;
+  font-size: 1.25rem;
 }
-footer nav .nav-footer ul {
+footer nav .footer-nav ul {
   height: 10.75rem;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 }
-footer nav .nav-footer ul li {
+footer nav .footer-nav ul li {
   color: #777777;
 }
 

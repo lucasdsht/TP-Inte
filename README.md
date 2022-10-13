@@ -1,8 +1,11 @@
 # TP integration web
 
-Choses a faire: 
+## Todo
 
-Prorité n°1:
-- HEADER & FOOTER
-- prendre la page dans l'ordre
-- /!\ "cartes" sur carrousel# TP-Inte
+- structure html
+- header / footer SCSS
+- Card SCSS
+- button scss
+- layout scss
+- caroussel
+- js
