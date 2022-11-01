@@ -124,34 +124,10 @@ h3 {
   border-radius: 7.5rem;
 }
 
-/*
-Structure HTML
-
-<header>
-    <div class="logo">
-        <a>
-            <h2><h2>
-        </a>
-    </div>
-
-    <nav>
-        <ul>
-            <li></li>
-        </li>
-    </nav>
-</header>
-*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  margin-top: 4%;
-}
-header .menu-mobile {
-  position: absolute;
-  right: 1rem;
-  font-size: 1.5625rem;
 }
 header .menu-mobile:hover {
   cursor: pointer;
@@ -164,240 +140,23 @@ header .menu-mobile:hover {
 header nav {
   display: none;
 }
+@media (min-width: 71.875em) {
+  header nav {
+    display: block;
+  }
+}
 header nav ul {
   display: flex;
+  justify-content: space-between;
   gap: 2.5rem;
 }
 header nav ul li {
-  font-size: 1rem;
-  color: #0A2640;
-  font-weight: 600;
-}
-@media (min-width: 71.875em) {
-  header nav {
-    display: flex;
-  }
-}
-
-main .hero-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2.6875rem;
-}
-main .hero-banner .heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .hero-banner .heading p {
-  font-size: 1.25rem;
-}
-main .hero-banner .heading h1 {
-  font-size: 4rem;
-  line-height: 5.25rem;
-  text-align: center;
-}
-@media (max-width: 40em) {
-  main .hero-banner .heading h1 {
-    font-size: 3.125rem;
-  }
-}
-main .hero-banner article {
-  width: 100%;
-  margin-top: 4.375rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 71.875em) {
-  main .hero-banner article {
-    flex-direction: column;
-  }
-}
-main .hero-banner article .hero-banner-art-img img {
-  width: 100%;
-  aspect-ratio: auto;
-}
-main .hero-banner article .hero-banner-art-content {
-  width: 45%;
-}
-@media (max-width: 71.875em) {
-  main .hero-banner article .hero-banner-art-content {
-    width: 100%;
-    margin-top: 10%;
-  }
-}
-main .hero-banner article .hero-banner-art-content .hero-banner-art-text {
-  margin-bottom: 1.25rem;
-}
-main .hero-banner article .hero-banner-art-content .hero-banner-art-text p {
-  color: #777777;
-  margin-bottom: 0.75rem;
-}
-main .hero-banner article .hero-banner-art-content .hero-banner-art-text p strong {
-  color: #0A2640;
-}
-main .hero-banner article .hero-banner-art-content .hero-banner-art-text h2 {
-  font-size: 3rem;
-  line-height: 4.5rem;
-}
-@media (max-width: 40em) {
-  main .hero-banner article .hero-banner-art-content .hero-banner-art-text h2 {
-    width: 100%;
-    font-size: 1.5625rem;
-    line-height: 2.5rem;
-  }
-}
-main .hero-banner article .hero-banner-art-content .hero-banner-art-author {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-main hr {
-  background-color: #0A2640;
-  height: 0.1875rem;
-  margin-bottom: 5.9375rem;
-  margin-top: 4.375rem;
-}
-main .article-card-container {
-  margin: 0 10% 0 10%;
-}
-main .article-card-container .article-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2.125rem;
-}
-@media (max-width: 71.875em) {
-  main .article-card-container .article-row {
-    flex-direction: column;
-  }
-}
-main .article-card-container .card {
-  width: 18.75rem;
-}
-@media (max-width: 71.875em) {
-  main .article-card-container .card {
-    margin-top: 8%;
-  }
-}
-main .article-card-container .card .card-img {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-main .article-card-container .card .card-info .card-text {
-  margin-bottom: 1.5rem;
-}
-main .article-card-container .card .card-info .card-text h4 {
-  margin-top: 0.75rem;
-  font-size: 1.25rem;
-  line-height: 2rem;
-}
-main .article-card-container .card .card-info .card-author {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-main .article-card-container .button-container {
-  width: 100%;
-  text-align: center;
-  margin-top: 4.875rem;
-}
-main .contact {
-  margin-top: 2.125rem;
-  margin-bottom: 11.5625rem;
-}
-main .contact article {
-  padding: 4.5rem 11.875rem;
-  background-color: #0A2640;
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-main .contact article h4 {
-  color: #fff;
-  font-size: 3rem;
-  line-height: 4.5rem;
-  text-align: center;
-}
-main .contact article .contact-form {
-  margin-top: 3.125rem;
-  display: flex;
-  flex-direction: row;
-}
-@media (max-width: 71.875em) {
-  main .contact article .contact-form {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-main .contact article .contact-form label {
-  display: none;
-}
-main .contact article .contact-form input {
-  border-radius: 15rem;
-  height: 3.5rem;
-  width: 23.125rem;
-  margin-right: 1.5rem;
-  padding-left: 2rem;
-}
-@media (max-width: 71.875em) {
-  main .contact article .contact-form input {
-    margin-bottom: 7%;
-  }
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 7%;
-}
-@media (max-width: 40em) {
-  footer {
-    flex-direction: column;
-  }
-}
-footer .footer-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3.125rem;
-  width: 50%;
-}
-footer .footer-text p {
-  color: #777777;
-}
-@media (max-width: 40em) {
-  footer .footer-text {
-    width: 100%;
-    margin-bottom: 3.125rem;
-  }
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-}
-@media (max-width: 40em) {
-  nav {
-    flex-direction: column;
-    align-items: start;
-  }
-}
-nav .footer-nav h5 {
   font-weight: 700;
-  font-size: 1.25rem;
+  color: #0A2640;
 }
-nav .footer-nav ul {
-  height: 10.75rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-nav .footer-nav ul li a {
-  color: #777777;
+
+footer .logo {
+  margin-bottom: 5%;
 }
 
 /*# sourceMappingURL=styles.css.map */
