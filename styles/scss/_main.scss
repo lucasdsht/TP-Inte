@@ -16,26 +16,25 @@ main {
       }
 
       h1 {
-        font-size: rem(64);
+        font-size: rem(50);
         line-height: rem(84);
         text-align: center;
 
-        @media (max-width: $breakpoints-small) {
-          font-size: rem(50);
+        @media (min-width: $breakpoints-small) {
+          font-size: rem(64);
         }
       }
     }
 
-    article {
-      width: 100%;
+    .hero-banner-art {
       margin-top: rem(70);
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
 
-      @media (max-width: $breakpoints-medium) {
-        flex-direction: column;
+      @media (min-width: $breakpoints-medium) {
+        flex-direction: row;
       }
 
       .hero-banner-art-img {
@@ -46,11 +45,11 @@ main {
       }
 
       .hero-banner-art-content {
-        width: 45%;
+        margin-top: 10%;
 
-        @media (max-width: $breakpoints-medium) {
-          width: 100%;
-          margin-top: 10%;
+        @media (min-width: $breakpoints-medium) {
+          width: 45%;
+
         }
 
         .hero-banner-art-text {
@@ -66,13 +65,12 @@ main {
           }
 
           h2 {
-            font-size: rem(48);
-            line-height: rem(72);
+            font-size: rem(25);
+            line-height: rem(40);
 
-            @media (max-width: $breakpoints-small) {
-              width: 100%;
-              font-size: rem(25);
-              line-height: rem(40);
+            @media (min-width: $breakpoints-small) {
+              font-size: rem(48);
+              line-height: rem(72);
             }
           }
         }
@@ -168,11 +166,11 @@ main {
       .contact-form {
         margin-top: rem(50);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
 
-        @media (max-width: $breakpoints-medium){
-          flex-direction: column;
-          align-items: center;
+        @media (min-width: $breakpoints-medium){
+          flex-direction: row;
         }
 
         label {
@@ -180,14 +178,15 @@ main {
         }
 
         input {
+          margin-bottom: 7%;
           border-radius: rem(240);
           height: rem(56);
           width: rem(370);
           margin-right: rem(24);
           padding-left: rem(32);
 
-          @media (max-width: $breakpoints-medium){
-            margin-bottom: 7%;
+          @media (min-width: $breakpoints-medium){
+            margin-bottom: 0;
           }
         }
       }

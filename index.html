@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boldo</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <header>
@@ -21,16 +18,19 @@
             <h2>Boldo</h2>
         </a>
     </div>
-    <div class="menu-mobile">
-        <i class="fa-solid fa-bars"></i>
-    </div>
     <nav>
-        <ul>
+        <ul class="link-container">
             <li><a href="#">Product</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#" class="cta-outline">Log In</a></li>
         </ul>
+
+        <button class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 </header>
 <main>
@@ -39,7 +39,7 @@
             <p>Blog</p>
             <h1>Thoughts and words</h1>
         </div>
-        <article>
+        <article class="hero-banner-art">
             <div class="hero-banner-art-img">
                 <img src="img/hero-banner-img.svg" alt="img hero banner article">
             </div>
@@ -229,5 +229,7 @@
         </div>
     </nav>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

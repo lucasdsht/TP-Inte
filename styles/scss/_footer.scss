@@ -1,26 +1,28 @@
 footer {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 7%;
 
 
-  @media (max-width: $breakpoints-small) {
-    flex-direction: column;
+  @media (min-width: $breakpoints-small) {
+    flex-direction: row;
   }
 
   .footer-text {
     display: flex;
     flex-direction: column;
+    margin-bottom: rem(50);
     gap: rem(50);
-    width: 50%;
+    width: 100%;
 
     p {
       color: $grey;
     }
 
-    @media (max-width: $breakpoints-small) {
-      width: 100%;
-      margin-bottom: rem(50);
+    @media (min-width: $breakpoints-small) {
+      width: 50%;
+      margin-bottom: 0;
     }
 
   }
@@ -29,11 +31,11 @@ footer {
 nav {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   width: 50%;
 
-  @media (max-width: $breakpoints-small) {
-    flex-direction: column;
-    align-items: start;
+  @media (min-width: $breakpoints-small) {
+    flex-direction: row;
   }
 
   .footer-nav {

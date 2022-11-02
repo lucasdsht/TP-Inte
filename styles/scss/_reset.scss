@@ -42,6 +42,14 @@ table {
 	border-spacing: 0;
 }
 
+button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+
 
 *, html, body {
 	font-family: $ff-body;
@@ -50,8 +58,8 @@ table {
 }
 
 body {
-	margin-left: 6%;
-	margin-right: 6%;
+	padding-left: 6%;
+	padding-right: 6%;
 }
 
 strong {
