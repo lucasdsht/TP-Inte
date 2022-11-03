@@ -93,13 +93,43 @@ main {
 
   .article-card-container {
     margin: 0 10% 0 10%;
+
     .article-row {
       display: flex;
       justify-content: space-between;
-      margin-top: rem(34);
+      flex-direction: column;
+      align-items: center;
 
-      @media (max-width: $breakpoints-medium) {
-        flex-direction: column;
+
+      @media (min-width: $breakpoints-medium) {
+        flex-direction: row;
+      }
+    }
+
+    .card-container {
+      margin-top: rem(34);
+    }
+
+    .owl-carousel {
+      .owl-dots {
+        margin-top: rem(20);
+        .owl-dot {
+          width: rem(20);
+          height: rem(20);
+          background-color: $dark-blue;
+          border: 2px solid $dark-blue;
+          border-radius: 100px;
+          margin: 0 rem(5);
+
+          &.active {
+            background-color: $white;
+          }
+
+          span {
+            margin: 0;
+            visibility: hidden;
+          }
+        }
       }
     }
 
@@ -143,24 +173,44 @@ main {
     }
   }
 
+  .old-news-container {
+    margin-top: rem(40);
+  }
+
   .contact {
     margin-top: rem(34);
-    margin-bottom: rem(185);
+    margin-bottom: rem(80);
+
+    @media (min-width: $breakpoints-small) {
+      margin-bottom: rem(100);
+    }
+
+    @media (min-width: $breakpoints-medium) {
+      margin-bottom: rem(185);
+    }
 
     article {
-      padding: rem(72) rem(190);
+      padding: rem(72) rem(60);
       background-color: $dark-blue;
       border-radius: rem(12);
       display: flex;
       align-items: center;
       flex-direction: column;
 
+      @media (min-width: $breakpoints-small) {
+        padding: rem(72) rem(190);
+      }
+
 
       h4 {
         color: $white;
-        font-size: rem(48);
+        font-size: rem(35);
         line-height: rem(72);
         text-align: center;
+        
+        @media (min-width: $breakpoints-small) {
+          font-size: rem(48);
+        }
       }
 
       .contact-form {
@@ -181,12 +231,18 @@ main {
           margin-bottom: 7%;
           border-radius: rem(240);
           height: rem(56);
-          width: rem(370);
-          margin-right: rem(24);
+          width: 100%;
           padding-left: rem(32);
+          border: none;
 
           @media (min-width: $breakpoints-medium){
             margin-bottom: 0;
+            width: rem(370);
+            margin-right: rem(24);
+          }
+
+          p {
+            color: red
           }
         }
       }

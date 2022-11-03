@@ -299,12 +299,34 @@ main .article-card-container {
 main .article-card-container .article-row {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 71.875em) {
+  main .article-card-container .article-row {
+    flex-direction: row;
+  }
+}
+main .article-card-container .card-container {
   margin-top: 2.125rem;
 }
-@media (max-width: 71.875em) {
-  main .article-card-container .article-row {
-    flex-direction: column;
-  }
+main .article-card-container .owl-carousel .owl-dots {
+  margin-top: 1.25rem;
+}
+main .article-card-container .owl-carousel .owl-dots .owl-dot {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #0A2640;
+  border: 2px solid #0A2640;
+  border-radius: 100px;
+  margin: 0 0.3125rem;
+}
+main .article-card-container .owl-carousel .owl-dots .owl-dot.active {
+  background-color: #fff;
+}
+main .article-card-container .owl-carousel .owl-dots .owl-dot span {
+  margin: 0;
+  visibility: hidden;
 }
 main .article-card-container .card {
   width: 18.75rem;
@@ -336,23 +358,46 @@ main .article-card-container .button-container {
   text-align: center;
   margin-top: 4.875rem;
 }
+main .old-news-container {
+  margin-top: 2.5rem;
+}
 main .contact {
   margin-top: 2.125rem;
-  margin-bottom: 11.5625rem;
+  margin-bottom: 5rem;
+}
+@media (min-width: 40em) {
+  main .contact {
+    margin-bottom: 6.25rem;
+  }
+}
+@media (min-width: 71.875em) {
+  main .contact {
+    margin-bottom: 11.5625rem;
+  }
 }
 main .contact article {
-  padding: 4.5rem 11.875rem;
+  padding: 4.5rem 3.75rem;
   background-color: #0A2640;
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+@media (min-width: 40em) {
+  main .contact article {
+    padding: 4.5rem 11.875rem;
+  }
+}
 main .contact article h4 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.1875rem;
   line-height: 4.5rem;
   text-align: center;
+}
+@media (min-width: 40em) {
+  main .contact article h4 {
+    font-size: 3rem;
+  }
 }
 main .contact article .contact-form {
   margin-top: 3.125rem;
@@ -372,20 +417,25 @@ main .contact article .contact-form input {
   margin-bottom: 7%;
   border-radius: 15rem;
   height: 3.5rem;
-  width: 23.125rem;
-  margin-right: 1.5rem;
+  width: 100%;
   padding-left: 2rem;
+  border: none;
 }
 @media (min-width: 71.875em) {
   main .contact article .contact-form input {
     margin-bottom: 0;
+    width: 23.125rem;
+    margin-right: 1.5rem;
   }
+}
+main .contact article .contact-form input p {
+  color: red;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin-bottom: 7%;
 }
 @media (min-width: 40em) {
@@ -402,6 +452,7 @@ footer .footer-text {
 }
 footer .footer-text p {
   color: #777777;
+  width: 60%;
 }
 @media (min-width: 40em) {
   footer .footer-text {
